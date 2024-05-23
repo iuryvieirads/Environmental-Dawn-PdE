@@ -572,10 +572,24 @@ header {
     font-size: 1.1rem;
   }
   .logo-texto {
-    display: none;
+    display: block;
+    max-width: 170px;
   }
 
   .endereco a {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo-texto {
+    display: block;
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 340px) {
+  .logo-texto {
+    display: none;
   }
 }

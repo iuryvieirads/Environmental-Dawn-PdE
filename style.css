@@ -1,0 +1,581 @@
+/* Fontes */
+.elsie-swash-caps-black {
+  font-family: "Elsie Swash Caps", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.elsie-swash-caps-regular {
+  font-family: "Elsie Swash Caps", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kiwi-maru-regular {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.kiwi-maru-medium {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.imprima-regular {
+  font-family: "Imprima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* fontes: definições gerais*/
+
+h1 {
+  /* titulos de sessões*/
+  font-family: "Elsie Swash Caps", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  /* Subtitulos*/
+  font-family: "Kiwi Maru", serif;
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+
+h3 {
+  /* beneficios e subtitulo dos card */
+  font-family: "Kiwi Maru", serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+h4 {
+  /* Footer */
+  font-family: "Imprima", sans-serif;
+  font-size: 1rem;
+}
+
+p {
+  /* paragrafro no subtitulo */
+  font-family: "Imprima", sans-serif;
+  font-size: 1.4rem;
+}
+.cards p {
+  /* paragrafo no card */
+  font-size: 1.1rem;
+}
+
+a {
+  /* navbar + botões */
+  font-family: "Imprima", sans-serif;
+  font-size: 1.25rem;
+}
+
+.endereco a {
+  /*link das Localizações*/
+  font-family: "Kiwi Maru", serif;
+  font-weight: 500;
+  font-size: 1.9rem;
+  font-style: normal;
+}
+
+.botoes p {
+  /*link do expandindo*/
+  font-family: "Imprima", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-style: normal;
+}
+
+/* config gerais */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-margin: 130px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* classes e ids */
+
+/* header - menu*/
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+}
+.container {
+  position: relative;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 15px 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 5px 0px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logos img {
+  cursor: pointer;
+}
+
+.logos a {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-content: center;
+  gap: 10px;
+}
+
+.logo-icone {
+  width: 50px;
+  max-height: 50px;
+}
+
+.logo-texto {
+  max-width: 222px;
+}
+
+/* menu normal */
+
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.menu a {
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.menu a:hover {
+  color: #036163;
+  background-color: #7ac4c5;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+.menu a:active {
+  color: #7ac4c5;
+  background-color: #036163;
+  transition: 0.1s;
+}
+
+/* Banner */
+
+#banner {
+  width: 100%;
+  height: 600px;
+  background-image: url(/Imagens/Slide/1920x1080.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 80px;
+}
+
+/* Beneficios */
+
+#beneficio {
+  margin: 0px 20px 100px 20px;
+}
+
+.caixa img {
+  max-width: 50px;
+}
+
+.grid-caixa {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+  justify-content: center;
+  gap: 30px;
+}
+
+.caixa {
+  height: 100px;
+  max-width: 400px;
+  display: flex;
+  padding: 0px 30px;
+  gap: 15px;
+  align-items: center;
+  background-color: rgb(249, 249, 249);
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* subtitulos */
+
+#reciclagem {
+  margin: 0px 60px 100px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 600px));
+  justify-content: center;
+  gap: 60px;
+}
+
+#reciclagem img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo {
+  position: relative;
+  display: grid;
+  justify-content: start;
+  align-items: end;
+  grid-template-rows: 80px;
+  gap: 10px;
+}
+
+.subtitulo h2 {
+  align-self: start;
+  margin-top: 20px;
+}
+
+.subtitulo p {
+  align-self: start;
+}
+
+.botao-direito {
+  justify-self: end;
+}
+.botao-esquerdo {
+  justify-self: start;
+}
+
+.subtitulo a {
+  padding: 10px 20px;
+  background-color: #7ac4c5;
+  color: #036163;
+  border-radius: 10px;
+}
+
+.subtitulo a:hover {
+  color: #7ac4c5;
+  background-color: #036163;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+.divisor-a {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  z-index: 1;
+  max-width: 80px;
+  max-height: 10px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.divisor-b {
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+  z-index: 1;
+  max-width: 80px;
+  max-height: 10px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Cards */
+
+.cards img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.grid-cards {
+  margin: 30px 10px 100px 10px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 290px));
+  justify-content: center;
+  gap: 30px;
+}
+
+.cards {
+  display: grid;
+  align-content: start;
+  width: 290px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  gap: 10px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#iniciativas h1 {
+  margin: 0px 10px;
+}
+.cards h3 {
+  padding: 10px 10px 0px 10px;
+}
+
+.cards p {
+  padding: 5px 10px 10px 10px;
+}
+
+/* centros*/
+
+#centros {
+  background-image: linear-gradient(#baf2f3, #ffffff);
+  padding: 100px 30px 50px 30px;
+}
+
+#centros h1 {
+  color: #036163;
+  margin-bottom: 50px;
+}
+
+.grid-enderecos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
+  justify-content: space-evenly;
+}
+
+.endereco {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.endereco iframe {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.endereco a {
+  display: block;
+  text-align: center;
+  padding: 5px 20px 10px 20px;
+  background-color: #ffffff;
+  color: #7ac4c5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.endereco a:hover {
+  color: #7ac4c5;
+  background-color: #036163;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+/* expandindo horizontes*/
+
+#expandindo {
+  background-image: url(/Imagens/expandindo/expandindo.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 100px 0px 150px 0px;
+}
+
+#expandindo h1 {
+  color: #fff;
+  margin: 0px 10px 50px 10px;
+}
+
+.grid-botoes {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.botoes {
+  background-color: #fff;
+  display: grid;
+  max-width: 400px;
+  padding: 10px 20px;
+  grid-template-columns: 1fr 25px;
+  gap: 20px;
+
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #036163;
+  border-radius: 10px;
+}
+
+.botoes img {
+  width: 25px;
+  color: #036163;
+}
+
+.botoes:hover {
+  color: #7ac4c5;
+  background-color: #036163;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+/*Footer */
+
+#footer {
+  max-width: auto;
+  height: 54px;
+  padding: 20px 0px 20px 0px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/*responsivo */
+
+/* menu Hamburguer */
+.botao-hamburguer {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.botao-hamburguer img {
+  width: 35px;
+  height: 35px;
+}
+
+/*pontos de quebra */
+
+@media (max-width: 1380px) {
+  .sub1 {
+    order: -1;
+  }
+
+  .img1 {
+    order: 1;
+  }
+
+  .sub2 {
+    order: 2;
+  }
+
+  .img2 {
+    order: 3;
+  }
+}
+
+@media (max-width: 1150px) {
+  .divisor-a,
+  .divisor-b {
+    display: none;
+  }
+
+  .botao-hamburguer {
+    display: block;
+    align-self: end;
+  }
+  .menu {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    top: 0;
+    right: 0px;
+    padding: 20px 30px 30px 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+
+    margin-right: 100vw;
+  }
+  @keyframes showsidebar {
+    from {
+      margin-right: 100vw;
+    }
+    top {
+      margin-right: 0vw;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #centros h1 {
+    font-size: 2.5rem;
+  }
+
+  #expandindo h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .subtitulo {
+    gap: 40px;
+  }
+
+  #reciclagem {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .botoes p {
+    font-size: 1rem;
+  }
+
+  .caixa img {
+    max-width: 50px;
+  }
+
+  .grid-caixa {
+    grid-template-columns: 1fr;
+  }
+
+  .caixa {
+    height: auto;
+    padding: 15px 30px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+  .logo-texto {
+    display: none;
+  }
+
+  .endereco a {
+    font-size: 1.2rem;
+  }
+}

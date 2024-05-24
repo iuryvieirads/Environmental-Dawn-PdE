@@ -27,7 +27,7 @@
       <nav id="nav" aria-label=" Principal">
         <ul class="menu" id="menu">
           <button onclick="togglesidebar()" class="botao-hamburguer">
-            <img src="/Imagens/menu/Block-2--Streamline-Flex.svg" alt="fechar menu">
+            <img src="/Imagens/menu/fechar 2.svg" alt="fechar menu">
           </button>
           <li><a href="#beneficio">BENEFÍCIOS</a></li>
           <li><a href="#reciclagem">RECICLAGEM</a></li>
@@ -46,7 +46,7 @@
     </div>
   </header>
 
-  <main tabindex="0" onclick="closesidebar()" id="main">
+  <main tabindex="0" onclick="closesidebar()" class="content" id="content">
 
     <aside id="banner">
     </aside>
@@ -240,19 +240,22 @@
   <script>
     var nav = document.getElementById('nav');
     var menu = document.getElementById('menu');
+    var content = document.getElementById('content');
     var showsidebar = false;
 
     function togglesidebar() {
       showsidebar = !showsidebar;
       if (showsidebar) {
-        menu.style.marginRight = '100vw';
+        menu.style.marginRight = '0vw';
 
       }
       else
-        menu.style.marginRight = '0vw';
+        menu.style.marginRight = '100vw';
     }
+
     function closesidebar() {
       if (showsidebar) {
+        showsidebar = true;
         togglesidebar();
       }
     }

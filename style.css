@@ -516,10 +516,10 @@ header {
   }
   @keyframes showsidebar {
     from {
-      margin-right: 100vw;
-    }
-    top {
       margin-right: 0vw;
+    }
+    to {
+      margin-right: 100vw;
     }
   }
 }

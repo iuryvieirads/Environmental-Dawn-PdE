@@ -486,14 +486,17 @@ header {
   .img2 {
     order: 3;
   }
-}
 
-@media (max-width: 1150px) {
+  .botao-esquerdo {
+    justify-self: end;
+  }
   .divisor-a,
   .divisor-b {
     display: none;
   }
+}
 
+@media (max-width: 1150px) {
   .botao-hamburguer {
     display: block;
     align-self: end;
